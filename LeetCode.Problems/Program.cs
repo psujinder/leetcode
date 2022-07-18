@@ -15,11 +15,20 @@ Console.WriteLine(result);*/
 //Console.WriteLine(ops.IsUnique("sekr1s"));
 Console.WriteLine(ops.IsPermutation("God", "dog"));*/
 
-int[][] matrix = {
+/*int[][] matrix = {
     new int[] {0,1,2,0},
     new int[] {3,4,5,2},
     new int[] {1,3,1,5}
 };
 
-new ZeroMatrix().SetZeroes(matrix);
+new ZeroMatrix().SetZeroes(matrix);*/
+
+int[][] courses = {
+    new int[] {1,4},
+    new int[] {2,4},
+    new int[] {3,1},
+     new int[] {3,2}
+};
+
+new CourseSchedule().CanFinish(5,courses);
 
