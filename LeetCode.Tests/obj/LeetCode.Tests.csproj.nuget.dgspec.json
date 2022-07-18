@@ -1,0 +1,134 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/sujinderpothula/Repo/csharp/leetcode/LeetCode.Tests/LeetCode.Tests.csproj": {}
+  },
+  "projects": {
+    "/Users/sujinderpothula/Repo/csharp/leetcode/LeetCode.Problems/LeetCode.Problems.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/sujinderpothula/Repo/csharp/leetcode/LeetCode.Problems/LeetCode.Problems.csproj",
+        "projectName": "LeetCode.Problems",
+        "projectPath": "/Users/sujinderpothula/Repo/csharp/leetcode/LeetCode.Problems/LeetCode.Problems.csproj",
+        "packagesPath": "/Users/sujinderpothula/.nuget/packages/",
+        "outputPath": "/Users/sujinderpothula/Repo/csharp/leetcode/LeetCode.Problems/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/sujinderpothula/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/opt/homebrew/Cellar/dotnet/6.0.104_1/libexec/sdk/6.0.104/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/sujinderpothula/Repo/csharp/leetcode/LeetCode.Tests/LeetCode.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/sujinderpothula/Repo/csharp/leetcode/LeetCode.Tests/LeetCode.Tests.csproj",
+        "projectName": "LeetCode.Tests",
+        "projectPath": "/Users/sujinderpothula/Repo/csharp/leetcode/LeetCode.Tests/LeetCode.Tests.csproj",
+        "packagesPath": "/Users/sujinderpothula/.nuget/packages/",
+        "outputPath": "/Users/sujinderpothula/Repo/csharp/leetcode/LeetCode.Tests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/sujinderpothula/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/sujinderpothula/Repo/csharp/leetcode/LeetCode.Problems/LeetCode.Problems.csproj": {
+                "projectPath": "/Users/sujinderpothula/Repo/csharp/leetcode/LeetCode.Problems/LeetCode.Problems.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.11.0, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.13.2, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/opt/homebrew/Cellar/dotnet/6.0.104_1/libexec/sdk/6.0.104/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
