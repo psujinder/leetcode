@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using LeetCode.Problems;
+using LeetCode.Problems.Utils;
 
 /*Console.WriteLine("Hello, World!");
 
@@ -23,12 +24,35 @@ Console.WriteLine(ops.IsPermutation("God", "dog"));*/
 
 new ZeroMatrix().SetZeroes(matrix);*/
 
-int[][] courses = {
+/*int[][] courses = {
     new int[] {1,4},
     new int[] {2,4},
     new int[] {3,1},
      new int[] {3,2}
 };
 
-new CourseSchedule().CanFinish(5,courses);
+new CourseSchedule().CanFinish(5,courses);*/
 
+TreeNode root = new TreeNode(6);
+TreeNode n1 = new TreeNode(2);
+TreeNode n2 = new TreeNode(8);
+TreeNode n3 = new TreeNode(0);
+TreeNode n4 = new TreeNode(4);
+TreeNode n5 = new TreeNode(3);
+TreeNode n6 = new TreeNode(5);
+TreeNode n7 = new TreeNode(7);
+TreeNode n8 = new TreeNode(9);
+
+root.right = n2;
+root.left = n1;
+
+n2.right = n8;
+n2.left = n7;
+
+n1.right = n4;
+n1.left = n3;
+
+n4.right = n6;
+n4.left = n5;
+
+new LowestCommonAncestor().LCA(root, n1,n2);
