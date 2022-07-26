@@ -59,4 +59,16 @@ new LowestCommonAncestor().LCA(root, n1,n2);*/
 
 //new RamsonNote().CanConstruct("aa","ab");
 
-new PossibleUniquePaths().UniquePaths(3,2);
+//new PossibleUniquePaths().UniquePaths(3,2);
+
+//new ConstructBinaryTree().BuildTree(new int[]{3,9,20,15,7}, new int[]{9,3,15,20,7});
+
+//new LeetCode.Problems.TaskScheduler().LeastInterval(new char[]{'A','A','A','B','B','B'},2);
+
+char[][] board = {
+    new char[] {'A','B','C','E'},
+    new char[] {'S','F','C','S'},
+    new char[] {'A','D','E','E'},
+};
+
+new WordSearch().Exist(board, "ABCCED");
