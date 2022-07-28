@@ -65,10 +65,12 @@ new LowestCommonAncestor().LCA(root, n1,n2);*/
 
 //new LeetCode.Problems.TaskScheduler().LeastInterval(new char[]{'A','A','A','B','B','B'},2);
 
-char[][] board = {
+/*char[][] board = {
     new char[] {'A','B','C','E'},
     new char[] {'S','F','C','S'},
     new char[] {'A','D','E','E'},
 };
 
-new WordSearch().Exist(board, "ABCCED");
+new WordSearch().Exist(board, "ABCCED");*/
+
+new FindPivotIndex().PivotIndex(new int[] {1,7,3,6,5,6});
