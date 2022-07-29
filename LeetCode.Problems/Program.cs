@@ -73,4 +73,11 @@ new LowestCommonAncestor().LCA(root, n1,n2);*/
 
 new WordSearch().Exist(board, "ABCCED");*/
 
-new FindPivotIndex().PivotIndex(new int[] {1,7,3,6,5,6});
+//new IsomorphicString().IsIsomorphic("badc", "baba");
+
+Trie trie = new Trie(new TrieNode());
+trie.AddEntry("ALL");
+trie.AddEntry("ALE");
+//trie.AddEntry("I");
+
+trie.Search("HI, ALEX");

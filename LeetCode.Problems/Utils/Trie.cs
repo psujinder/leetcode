@@ -8,14 +8,14 @@ public class Trie{
         this.root = root;
     }
 
-    public void Insert(string word){
+    public void AddEntry(string word){
         TrieNode node = root;
 
         foreach(char ch in word){
             if(!node.ContainsKey(ch)){
                 node.Add(ch, new TrieNode());
             }
-            node = node.Get(ch);
+            node = node.GetChild(ch);
         }
         node.SetComplete();
     }
@@ -23,20 +23,17 @@ public class Trie{
     public bool Search(string word){
 
         TrieNode node = root;
-        var tmp = "";
-
+        
         foreach(char ch in word){
             if(node.ContainsKey(ch)){
-                node = node.Get(ch);
-                tmp += ch;
+                node = node.GetChild(ch);
+                if(node.IsComplete()){
+                    return true;
+                }
             }
         }
 
-        if(node != null && node.IsComplete() && tmp == word){
-            return true;
-        }else{
-            return false;
-        }
+        return false;
     }
 
 }
@@ -67,8 +64,17 @@ public class TrieNode {
         children[ch] = node;
     }
 
-    public TrieNode Get(char ch){
+    public TrieNode GetChild(char ch){
         return children[ch];
+    }
+
+    public bool HasChild(char ch){
+        
+        bool hasChildern;
+
+        hasChildern = children.Count > 0 ?  true:  false;
+        
+        return hasChildern;
     }
 
 }
