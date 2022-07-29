@@ -4,7 +4,6 @@ public class CheckSubsequece{
 
     public bool IsSubsequence (string s, string t){
 
-        int len_s = s.Length;
         int idx_s = 0;
 
         if (s.Length == 0)
