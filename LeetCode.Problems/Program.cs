@@ -82,4 +82,5 @@ trie.AddEntry("ALE");
 
 trie.Search("HI, ALEX");*/
 
-new CheckSubsequece().IsSubsequence("abc","ahbgdc");
+//new CheckSubsequece().IsSubsequence("abc","ahbgdc");
+new RemoveDuplicates206().RemoveDuplicates(new int[] {0,0,1,1,1,2,2,3,3,4});
