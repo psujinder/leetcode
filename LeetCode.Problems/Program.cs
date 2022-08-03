@@ -88,4 +88,35 @@ trie.Search("HI, ALEX");*/
 //new FindClosestNodeToGivenTwoNodes().ClosestMeetingNodes(new int[]{2,2,3,-1},0,1);
 //new FindClosestNodeToGivenTwoNodes().ClosestMeetingNodes(new int[]{1,2,-1},0,2);
 //new FindClosestNodeToGivenTwoNodes().ClosestMeetingNodes(new int[]{4,4,4,5,1,2,2},1,1);
-new LongestCycleInGraph().LongestCyce(new int[] {1,2,0,4,5,6,3,8,9,7});
+//new LongestCycleInGraph().LongestCyce(new int[] {1,2,0,4,5,6,3,8,9,7});
+
+TreeNode p = new TreeNode(1);
+p.left = new TreeNode(2);
+p.right = new TreeNode(3);
+
+TreeNode q = new TreeNode(1);
+q.left = new TreeNode(2);;
+q.right = new TreeNode(3);
+
+new SameTree().IsSameTree(p,q);
+
+/*TreeNode p = new TreeNode(1);
+p.left = new TreeNode(2);
+p.right = null;
+
+TreeNode q = new TreeNode(1);
+q.left = null;
+q.right = new TreeNode(2);
+
+new SameTree().IsSameTree(p,q);*/
+
+
+/*TreeNode p = new TreeNode(1);
+p.left = null;
+p.right = null;
+
+TreeNode q = new TreeNode(1);
+q.left = null;
+q.right = new TreeNode(2);
+
+new SameTree().IsSameTree(p,q);*/
