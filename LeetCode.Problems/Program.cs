@@ -84,4 +84,7 @@ trie.Search("HI, ALEX");*/
 
 //new CheckSubsequece().IsSubsequence("abc","ahbgdc");
 //new RemoveDuplicates206().RemoveDuplicates(new int[] {0,0,1,1,1,2,2,3,3,4});
-new MaximumNumberOfGroups().MaximumGroups2(new int[]{19,27,8,42,30,27,19,23,46,26,12});
+//new MaximumNumberOfGroups().MaximumGroups2(new int[]{19,27,8,42,30,27,19,23,46,26,12});
+new FindClosestNodeToGivenTwoNodes().ClosestMeetingNodes(new int[]{2,2,3,-1},0,1);
+//new FindClosestNodeToGivenTwoNodes().ClosestMeetingNodes(new int[]{1,2,-1},0,2);
+//new FindClosestNodeToGivenTwoNodes().ClosestMeetingNodes(new int[]{4,4,4,5,1,2,2},1,1);
