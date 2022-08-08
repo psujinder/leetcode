@@ -122,8 +122,10 @@ q.right = new TreeNode(2);
 new SameTree().IsSameTree(p,q);*/
 //new WordLadder().LadderLength("hit", "cog", new List<string>{"hot","dot","dog","lot","log","cog"});
 
-//Console.WriteLine(new LongestIdealSubsequence().Subsequece("acfgbd",2));
-//Console.WriteLine(new LongestIdealSubsequence().Subsequece("abcd",3));
+//Console.WriteLine(new LongestIdealSubsequence().LongestIdealString("acfgbd",2));
+Console.WriteLine(new LongestIdealSubsequence().LongestIdealString("abcd",3));
+//Console.WriteLine(new LongestIdealSubsequence().LongestIdealString("pvjcci",4));
+//Console.WriteLine(new LongestIdealSubsequence().LongestIdealString("eduktdb",15));
 
 int[][] edges = {
     new int[] {0,1},
@@ -143,5 +145,5 @@ int[][] edges2 = {
     new int[] {5,6}, 
 };
 
-Console.WriteLine(new MaxReachableNodesWithRestriction().MaxNodes(7,edges,new int[]{4,5}));
+//Console.WriteLine(new MaxReachableNodesWithRestriction().MaxNodes(7,edges,new int[]{4,5}));
 //Console.WriteLine(new MaxReachableNodesWithRestriction().MaxNodes(7,edges2,new int[]{1,2,4}));
