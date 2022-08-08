@@ -16,7 +16,7 @@ public class PathSum {
             return (targetSum == 0);
        }
 
-       return HasPathSum(root.left, targetSum) || HasPathSum(root.right, targetSum);ß
+       return HasPathSum(root.left, targetSum) || HasPathSum(root.right, targetSum);
     }
 
 }

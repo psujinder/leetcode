@@ -90,7 +90,7 @@ trie.Search("HI, ALEX");*/
 //new FindClosestNodeToGivenTwoNodes().ClosestMeetingNodes(new int[]{4,4,4,5,1,2,2},1,1);
 //new LongestCycleInGraph().LongestCyce(new int[] {1,2,0,4,5,6,3,8,9,7});
 
-TreeNode p = new TreeNode(1);
+/*TreeNode p = new TreeNode(1);
 p.left = new TreeNode(2);
 p.right = new TreeNode(3);
 
@@ -120,3 +120,7 @@ q.left = null;
 q.right = new TreeNode(2);
 
 new SameTree().IsSameTree(p,q);*/
+//new WordLadder().LadderLength("hit", "cog", new List<string>{"hot","dot","dog","lot","log","cog"});
+
+//Console.WriteLine(new LongestIdealSubsequence().Subsequece("acfgbd",2));
+Console.WriteLine(new LongestIdealSubsequence().Subsequece("abcd",3));
