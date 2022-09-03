@@ -127,7 +127,7 @@ new SameTree().IsSameTree(p,q);*/
 //Console.WriteLine(new LongestIdealSubsequence().LongestIdealString("pvjcci",4));
 //Console.WriteLine(new LongestIdealSubsequence().LongestIdealString("eduktdb",15));
 
-int[][] edges = {
+/*int[][] edges = {
     new int[] {0,1},
     new int[] {1,2},
     new int[] {3,1},
@@ -143,10 +143,33 @@ int[][] edges2 = {
      new int[] {2,3},
     new int[] {4,0}, 
     new int[] {5,6}, 
-};
+};*/
 
 //Console.WriteLine(new MaxReachableNodesWithRestriction().MaxNodes(7,edges,new int[]{4,5}));
 //Console.WriteLine(new MaxReachableNodesWithRestriction().MaxNodes(7,edges2,new int[]{1,2,4}));
 
 //Console.WriteLine(new CheckValidPartition().ValidPartition(new int[]{803201,803201,803201,803201,803202,803203}));
-Console.WriteLine(new CheckValidPartition().ValidPartition(new int[]{1,1,1,2}));
+//Console.WriteLine(new CheckValidPartition().ValidPartition(new int[]{1,1,1,2}));
+//Console.WriteLine(new SpecialIntegers().SpecialIntegerCount(20));
+
+//
+
+/*int[][] grid2 = {
+    new int[] {1,1,1,1,1},
+    new int[] {1,1,1,1,1},
+    new int[] {1,1,2,1,1},
+    new int[] {1,1,1,1,1},
+    new int[] {1,1,1,1,1},
+    
+};*/
+
+//Console.WriteLine(new MaxLocal().MaxLocalGrid(grid2));
+
+//Console.WriteLine(new ConstructSmallestNumberFromDIString().SmallestNumber("IIII"));
+//Console.WriteLine(new ConstructSmallestNumberFromDIString().SmallestNumber("DDD"));
+//
+
+//Console.WriteLine(new SpecialIntegers().SpecialIntegerCount(20));
+//Console.WriteLine(new SpecialIntegers().SpecialIntegerCount(9));
+
+Console.WriteLine(new LongestSubstringWithoutRepeatingCharacter().LengthOfLongestSubstring("abba"));
