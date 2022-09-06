@@ -35,14 +35,8 @@ public class LongestPalindrome {
               center ++;
         }
 
-        /*for (int i = maxCenter - maxRadius; i<= maxCenter+maxRadius; i++){
-             if(modifiedString[i] != '#'){
-                palindrome += modifiedString[i];     
-             }             
-        }*/
 
         palindrome = modifiedString.Substring(maxCenter-maxRadius, maxRadius+1) + modifiedString.Substring(maxCenter+1, maxRadius);
-        
         palindrome = palindrome.Replace("#","");
 
         return palindrome;
