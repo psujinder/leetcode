@@ -19,11 +19,11 @@ public class ReverseLinkedList{
         return prev;*/
 
         if(head == null || head.next == null){
-            return;
+            return head;
         }
 
         ListNode p = ReverseList(head.next);
-        head.next.next = p;
+        head.next.next = head;
         head.next = null;
 
         return p;
