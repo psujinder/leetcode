@@ -6,7 +6,7 @@ public class ReverseLinkedList{
 
     public ListNode ReverseList(ListNode head) {
 
-        ListNode prev = null;
+        /*ListNode prev = null;
         ListNode curr = head;
 
         while(curr != null){
@@ -16,7 +16,17 @@ public class ReverseLinkedList{
             curr = tmp;
         }
 
-        return prev;
+        return prev;*/
+
+        if(head == null || head.next == null){
+            return;
+        }
+
+        ListNode p = ReverseList(head.next);
+        head.next.next = p;
+        head.next = null;
+
+        return p;
     }
 
 }
