@@ -4,28 +4,32 @@ public class IsomorphicString{
 
     public bool IsIsomorphic(string s, string t){
 
+
         if(s.Length != t.Length){
             return false;
         }
 
-        Dictionary<char, char> hashmap = new Dictionary<char, char>();
+        int[] mappingStoT = new int[256];
+        Array.Fill(mappingStoT, -1);
 
-        for(int i= 0; i < s.Length; i++){
-            
-            if(hashmap.ContainsKey(s[i]) || hashmap.ContainsValue(t[i])){
-                if(hashmap[s[i]] == t[i] && hashmap[t[i]] == s[i]){
-                    continue;
-                }else{
-                    return false;
-                }
+        int[] mappingTtoS = new int[256];
+        Array.Fill(mappingTtoS, -1);
+        
+        for(int i = 0; i< s.Length; i++){
+            var c1 = s[i];
+            var c2 = t[i];
+
+            if(mappingStoT[c1] == -1 && mappingTtoS[c2] == -1){
+                mappingStoT[c1] = c2;
+                mappingTtoS[c2] = c1;
             }
-            else{               
-                hashmap.Add(s[i],t[i]);                
+            else if (mappingStoT[c1] != c2 ||  mappingTtoS[c2] != c1){
+                return false;    
             }
+
         }
 
-
-        return true;
+       return true;
 
     }
 

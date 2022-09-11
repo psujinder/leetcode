@@ -173,4 +173,5 @@ int[][] edges2 = {
 //Console.WriteLine(new SpecialIntegers().SpecialIntegerCount(9));
 
 //Console.WriteLine(new LongestSubstringWithoutRepeatingCharacter().LengthOfLongestSubstring("abba"));
-Console.WriteLine(new LongestPalindrome().LongestPalindromeString("a"));
+//Console.WriteLine(new LongestPalindrome().LongestPalindromeString("a"));
+Console.WriteLine(new IsomorphicString().IsIsomorphic("badc", "baba"));
