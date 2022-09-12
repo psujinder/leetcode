@@ -175,4 +175,6 @@ int[][] edges2 = {
 //Console.WriteLine(new LongestSubstringWithoutRepeatingCharacter().LengthOfLongestSubstring("abba"));
 //Console.WriteLine(new LongestPalindrome().LongestPalindromeString("a"));
 //Console.WriteLine(new IsomorphicString().IsIsomorphic("badc", "baba"));
-Console.WriteLine(new TopKFrequentWords().TopKFrequent(new string[]{"i","love","leetcode","i","love","coding"},3));
+//Console.WriteLine(new TopKFrequentWords().TopKFrequent(new string[]{"i","love","leetcode","i","love","coding"},3));
+//Console.WriteLine(new DecodeString().DecodedString("100[leetcode]"));
+Console.WriteLine(new DecodeString().DecodedString("3[a]2[bc]"));
