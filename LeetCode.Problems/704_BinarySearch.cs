@@ -14,11 +14,11 @@ public class BinarySearch{
             }  
 
             if (nums[idx] < target){
-            left = idx + 1;
+                left = idx + 1;
             }
 
             if (nums[idx] > target){
-            right = idx - 1;
+                right = idx - 1;
             }
         }
         return -1;
