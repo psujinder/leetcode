@@ -180,4 +180,5 @@ int[][] edges2 = {
 //Console.WriteLine(new DecodeString().DecodedString("3[a]2[bc]"));
 //Console.WriteLine(new Fibonacci().Fib(4));
 
-Console.WriteLine(new BackspaceStringCompare().BackspaceCompare("a#c", "b"));
+//Console.WriteLine(new BackspaceStringCompare().BackspaceCompare("a#c", "b"));
+Console.WriteLine(new LastStoneWeight().LastWeight(new int[]{2,2}));
