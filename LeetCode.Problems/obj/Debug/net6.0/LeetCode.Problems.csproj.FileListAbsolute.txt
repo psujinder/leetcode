@@ -1,0 +1,15 @@
+/Users/sujinderpothula/Repo/csharp/leetcode/LeetCode.Problems/bin/Debug/net6.0/LeetCode.Problems
+/Users/sujinderpothula/Repo/csharp/leetcode/LeetCode.Problems/bin/Debug/net6.0/LeetCode.Problems.deps.json
+/Users/sujinderpothula/Repo/csharp/leetcode/LeetCode.Problems/bin/Debug/net6.0/LeetCode.Problems.runtimeconfig.json
+/Users/sujinderpothula/Repo/csharp/leetcode/LeetCode.Problems/bin/Debug/net6.0/LeetCode.Problems.dll
+/Users/sujinderpothula/Repo/csharp/leetcode/LeetCode.Problems/bin/Debug/net6.0/ref/LeetCode.Problems.dll
+/Users/sujinderpothula/Repo/csharp/leetcode/LeetCode.Problems/bin/Debug/net6.0/LeetCode.Problems.pdb
+/Users/sujinderpothula/Repo/csharp/leetcode/LeetCode.Problems/obj/Debug/net6.0/LeetCode.Problems.csproj.AssemblyReference.cache
+/Users/sujinderpothula/Repo/csharp/leetcode/LeetCode.Problems/obj/Debug/net6.0/LeetCode.Problems.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sujinderpothula/Repo/csharp/leetcode/LeetCode.Problems/obj/Debug/net6.0/LeetCode.Problems.AssemblyInfoInputs.cache
+/Users/sujinderpothula/Repo/csharp/leetcode/LeetCode.Problems/obj/Debug/net6.0/LeetCode.Problems.AssemblyInfo.cs
+/Users/sujinderpothula/Repo/csharp/leetcode/LeetCode.Problems/obj/Debug/net6.0/LeetCode.Problems.csproj.CoreCompileInputs.cache
+/Users/sujinderpothula/Repo/csharp/leetcode/LeetCode.Problems/obj/Debug/net6.0/LeetCode.Problems.dll
+/Users/sujinderpothula/Repo/csharp/leetcode/LeetCode.Problems/obj/Debug/net6.0/ref/LeetCode.Problems.dll
+/Users/sujinderpothula/Repo/csharp/leetcode/LeetCode.Problems/obj/Debug/net6.0/LeetCode.Problems.pdb
+/Users/sujinderpothula/Repo/csharp/leetcode/LeetCode.Problems/obj/Debug/net6.0/LeetCode.Problems.genruntimeconfig.cache
