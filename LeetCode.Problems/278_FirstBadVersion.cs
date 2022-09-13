@@ -2,7 +2,7 @@ namespace LeetCode.Problems;
 
 public class FirstBadVersion{
 
-    public int FirstBadVersionNumber(int n){
+    /*public int FirstBadVersionNumber(int n){
 
         int l = 1;
         int r = n;
@@ -17,6 +17,6 @@ public class FirstBadVersion{
         }
 
         return l;
-    }
+    }*/
 
 }

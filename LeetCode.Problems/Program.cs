@@ -184,4 +184,18 @@ int[][] edges2 = {
 //Console.WriteLine(new LastStoneWeight().LastWeight(new int[]{2,2}));
 //Console.WriteLine(new BullsAndCows().GetHint("1807","7810"));
 //Console.WriteLine(new LongestPalindrome2().LongestPalingdromeLength("abccccdd"));
-Console.WriteLine(new BinarySearch().Search(new int[]{5},5));
+//Console.WriteLine(new BinarySearch().Search(new int[]{5},5));
+
+TreeNode node5 = new TreeNode(5);
+TreeNode node1 = new TreeNode(1);
+TreeNode node4 = new TreeNode(4);
+TreeNode node3 = new TreeNode(3);
+TreeNode node6 = new TreeNode(6);
+TreeNode node7 = new TreeNode(7);
+
+node5.left = node4;
+node5.right = node6;
+node6.left = node3;
+node6.right = node7;
+
+Console.WriteLine(new ValidateBinarySearchTree().IsValidBST(node5));
