@@ -181,4 +181,5 @@ int[][] edges2 = {
 //Console.WriteLine(new Fibonacci().Fib(4));
 
 //Console.WriteLine(new BackspaceStringCompare().BackspaceCompare("a#c", "b"));
-Console.WriteLine(new LastStoneWeight().LastWeight(new int[]{2,2}));
+//Console.WriteLine(new LastStoneWeight().LastWeight(new int[]{2,2}));
+Console.WriteLine(new BullsAndCows().GetHint("1807","7810"));
