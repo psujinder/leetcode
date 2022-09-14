@@ -199,4 +199,17 @@ node6.left = node3;
 node6.right = node7;
 
 //Console.WriteLine(new ValidateBinarySearchTree().IsValidBST(node5));
-Console.WriteLine(new UniqueSumToZero().SumZero(6));
+//Console.WriteLine(new UniqueSumToZero().SumZero(6));
+
+int[][] dungeon = {
+    new int[] {-2,-3,3},
+    new int[] {-5,-10,1},
+    new int[] {10,30,-5}
+};
+
+/*int[][] dungeon = {
+    new int[] {-3,5}
+};*/
+
+
+Console.WriteLine(new DungeonGame().CalculateMinimumHP(dungeon));
