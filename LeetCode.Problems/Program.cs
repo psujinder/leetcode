@@ -198,4 +198,5 @@ node5.right = node6;
 node6.left = node3;
 node6.right = node7;
 
-Console.WriteLine(new ValidateBinarySearchTree().IsValidBST(node5));
+//Console.WriteLine(new ValidateBinarySearchTree().IsValidBST(node5));
+Console.WriteLine(new UniqueSumToZero().SumZero(6));
