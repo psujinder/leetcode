@@ -214,8 +214,16 @@ int[][] dungeon = {
 
 //Console.WriteLine(new DungeonGame().CalculateMinimumHP(dungeon));
 
-LeetCode.Problems.Trie trie = new LeetCode.Problems.Trie();
+/*LeetCode.Problems.Trie trie = new LeetCode.Problems.Trie();
 trie.Insert("apple");
 Console.WriteLine(trie.Search("apple"));
 Console.WriteLine(trie.Search("app"));
-Console.WriteLine(trie.StartsWith("app"));
+Console.WriteLine(trie.StartsWith("app"));*/
+
+int[][] image = {
+    new int[] {1,1,1},
+    new int[] {1,1,0},
+    new int[] {1,0,1}
+};
+
+Console.WriteLine(new FloodFill().FloodFillImage(image,1,1,2));

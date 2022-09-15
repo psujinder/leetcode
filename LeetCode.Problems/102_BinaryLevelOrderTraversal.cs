@@ -34,40 +34,8 @@ public class BinaryLevelOrderTraversal{
 
             items.Add(levelItems);
         }   
-
-
-        return items;
-
-        /*List<IList<int>> items = new List<IList<int>>();
-
-        if(root == null)
-            return items;
-
-        Queue<TreeNode> queue = new Queue<TreeNode>();
-        queue.Enqueue(root);
-
-        while(queue.Count > 0){
-
-               List<int> levelItems = new List<int>();
-               
-               var levelCount = queue.Count;
-               for(int i =0; i< levelCount; i++){
-
-                    TreeNode node = queue.Dequeue();
-                    levelItems.Add(node.val);
-
-                    if(node.left!=null){
-                        queue.Enqueue(node.left);
-                    }
-
-                    if(node.right!=null){
-                        queue.Enqueue(node.right);
-                    }
-               }
-               items.Add(levelItems);
-        }  
         
-        return items;*/
+        return items;
     }
 
 }
