@@ -212,4 +212,10 @@ int[][] dungeon = {
 };*/
 
 
-Console.WriteLine(new DungeonGame().CalculateMinimumHP(dungeon));
+//Console.WriteLine(new DungeonGame().CalculateMinimumHP(dungeon));
+
+LeetCode.Problems.Trie trie = new LeetCode.Problems.Trie();
+trie.Insert("apple");
+Console.WriteLine(trie.Search("apple"));
+Console.WriteLine(trie.Search("app"));
+Console.WriteLine(trie.StartsWith("app"));

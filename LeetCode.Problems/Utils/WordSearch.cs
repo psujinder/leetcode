@@ -6,7 +6,7 @@ public class WordSearchTrie{
 
     Trie _trie;
 
-    public WordSearchTrie(){
+    /*public WordSearchTrie(){
         _trie = new Trie(new TrieNode());
     }
 
@@ -16,7 +16,7 @@ public class WordSearchTrie{
         foreach(string str in dict){
             _trie.AddEntry(str);
         }
-    }
+    }*/
 
     
 
