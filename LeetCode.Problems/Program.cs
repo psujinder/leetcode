@@ -226,4 +226,5 @@ int[][] image = {
     new int[] {1,0,1}
 };
 
-Console.WriteLine(new FloodFill().FloodFillImage(image,1,1,2));
+//Console.WriteLine(new FloodFill().FloodFillImage(image,1,1,2));
+Console.WriteLine(new MinCostStairs().MinCostClimbingStairs(new int[]{10,15,20}));

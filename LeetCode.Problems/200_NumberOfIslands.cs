@@ -10,7 +10,7 @@ public class NumberOfIslands{
             for(int y = 0; y < grid[0].Length; y++){
                 if (grid[x][y] == 1){
                     islands ++;
-                    dfs(grid, x y);
+                    dfs(grid, x, y);
                 }        
             }
         }
