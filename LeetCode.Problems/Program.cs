@@ -186,7 +186,7 @@ int[][] edges2 = {
 //Console.WriteLine(new LongestPalindrome2().LongestPalingdromeLength("abccccdd"));
 //Console.WriteLine(new BinarySearch().Search(new int[]{5},5));
 
-TreeNode node5 = new TreeNode(5);
+/*TreeNode node5 = new TreeNode(5);
 TreeNode node1 = new TreeNode(1);
 TreeNode node4 = new TreeNode(4);
 TreeNode node3 = new TreeNode(3);
@@ -207,9 +207,9 @@ int[][] dungeon = {
     new int[] {10,30,-5}
 };
 
-/*int[][] dungeon = {
+int[][] dungeon = {
     new int[] {-3,5}
-};*/
+};
 
 
 //Console.WriteLine(new DungeonGame().CalculateMinimumHP(dungeon));
@@ -218,13 +218,10 @@ int[][] dungeon = {
 trie.Insert("apple");
 Console.WriteLine(trie.Search("apple"));
 Console.WriteLine(trie.Search("app"));
-Console.WriteLine(trie.StartsWith("app"));*/
-
-int[][] image = {
-    new int[] {1,1,1},
-    new int[] {1,1,0},
-    new int[] {1,0,1}
-};
-
+Console.WriteLine(trie.StartsWith("app"));
 //Console.WriteLine(new FloodFill().FloodFillImage(image,1,1,2));
-Console.WriteLine(new MinCostStairs().MinCostClimbingStairs(new int[]{10,15,20}));
+//Console.WriteLine(new MinCostStairs().MinCostClimbingStairs(new int[]{10,15,20}));
+//Console.Write(new PossibleAnagrams().FindAnagrams("cbaebabacd","abc"));*/
+
+//new ArrayInsertSort().Sort();
+new LongestRepeatingCharacterReplacement().characterReplacement("ABAB",2);
