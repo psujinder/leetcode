@@ -224,4 +224,36 @@ Console.WriteLine(trie.StartsWith("app"));
 //Console.Write(new PossibleAnagrams().FindAnagrams("cbaebabacd","abc"));*/
 
 //new ArrayInsertSort().Sort();
-new LongestRepeatingCharacterReplacement().characterReplacement("ABAB",2);
+//new LongestRepeatingCharacterReplacement().characterReplacement("ABAB",2);
+
+int[][] movesA = {
+    new int[] {0,0},
+    new int[] {2,0},
+    new int[] {1,1},
+    new int[] {2,1},
+    new int[] {2,2}
+};
+
+
+int[][] movesB = {
+    new int[] {0,0},
+    new int[] {1,1},
+    new int[] {0,1},
+    new int[] {0,2},
+    new int[] {1,0},
+    new int[] {2,0}
+};
+
+int[][] movesDraw = {
+    new int[] {0,0},
+    new int[] {1,1},
+    new int[] {2,0},
+    new int[] {1,0},
+    new int[] {1,2},
+    new int[] {2,1},
+    new int[] {0,1},
+    new int[] {0,2},
+    new int[] {2,2},
+};
+
+Console.WriteLine(new TicTacToe().TictactoeGame(movesDraw));
