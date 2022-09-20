@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using LeetCode.Problems;
 using LeetCode.Problems.Utils;
+using System.Globalization;
 
 /*Console.WriteLine("Hello, World!");
 
@@ -214,14 +215,14 @@ int[][] dungeon = {
 
 //Console.WriteLine(new DungeonGame().CalculateMinimumHP(dungeon));
 
-/*LeetCode.Problems.Trie trie = new LeetCode.Problems.Trie();
+LeetCode.Problems.Trie trie = new LeetCode.Problems.Trie();
 trie.Insert("apple");
 Console.WriteLine(trie.Search("apple"));
 Console.WriteLine(trie.Search("app"));
 Console.WriteLine(trie.StartsWith("app"));
 //Console.WriteLine(new FloodFill().FloodFillImage(image,1,1,2));
 //Console.WriteLine(new MinCostStairs().MinCostClimbingStairs(new int[]{10,15,20}));
-//Console.Write(new PossibleAnagrams().FindAnagrams("cbaebabacd","abc"));*/
+//Console.Write(new PossibleAnagrams().FindAnagrams("cbaebabacd","abc"));
 
 //new ArrayInsertSort().Sort();
 //new LongestRepeatingCharacterReplacement().characterReplacement("ABAB",2);
@@ -256,4 +257,4 @@ int[][] movesDraw = {
     new int[] {2,2},
 };
 
-Console.WriteLine(new TicTacToe().TictactoeGame(movesDraw));
+Console.WriteLine(new TicTacToe().TictactoeGame(movesDraw));*/
