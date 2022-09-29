@@ -258,3 +258,5 @@ int[][] movesDraw = {
 };
 
 Console.WriteLine(new TicTacToe().TictactoeGame(movesDraw));*/
+
+Console.Write(new MaxSubarray().MaxSubArrayTotal(new int[]{1}));
