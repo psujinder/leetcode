@@ -12,8 +12,7 @@ public class BestTimeToBuyAndSellStock{
                 minPrice = prices[i];
             }
 
-            var tmpProfit = prices[i] - minPrice;
-            maxProfit = (tmpProfit > maxProfit)? tmpProfit: maxProfit;
+            maxProfit = Math.Max(prices[i] - minPrice, maxProfit);
         }
 
         return maxProfit;

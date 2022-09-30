@@ -259,4 +259,8 @@ int[][] movesDraw = {
 
 Console.WriteLine(new TicTacToe().TictactoeGame(movesDraw));*/
 
-Console.Write(new MaxSubarray().MaxSubArrayTotal(new int[]{1}));
+//Console.Write(new MaxSubarray().MaxSubArrayTotal(new int[]{1}));
+
+//new MergeSortedArray().Merge(new int[]{1,2,3,0,0,0}, 3, new int[]{2,5,6}, 3);
+
+new IntersectionOfTwoArraysII().Intersect(new int[]{1,2,2,1}, new int[]{2,2});
