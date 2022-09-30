@@ -272,4 +272,6 @@ Console.WriteLine(new TicTacToe().TictactoeGame(movesDraw));*/
 
 new ReshapeMatrix().MatrixReshape(arr,1,4);*/
 
-new PascalsTriangle().Generate(5);
+//new PascalsTriangle().Generate(5);
+
+new FirstUniqueCharacter().FirstUniqChar("aabb");
