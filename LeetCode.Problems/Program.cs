@@ -263,4 +263,26 @@ Console.WriteLine(new TicTacToe().TictactoeGame(movesDraw));*/
 
 //new MergeSortedArray().Merge(new int[]{1,2,3,0,0,0}, 3, new int[]{2,5,6}, 3);
 
-new IntersectionOfTwoArraysII().Intersect(new int[]{1,2,2,1}, new int[]{2,2});
+//new IntersectionOfTwoArraysII().Intersect(new int[]{1,2,2,1}, new int[]{2,2});
+
+TreeNode node4 = new TreeNode();
+node4.val = 4;
+
+TreeNode node2 = new TreeNode();
+node2.val = 2;
+
+TreeNode node7 = new TreeNode();
+node7.val = 7;
+
+TreeNode node1 = new TreeNode();
+node1.val = 1;
+
+TreeNode node3 = new TreeNode();
+node3.val = 3;
+
+node4.left = node7;
+node4.right = node2;
+node2.right = node1;
+node2.left = node3;
+
+new SearchInBinaryTree().SearchBST(node4, 2);
