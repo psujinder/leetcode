@@ -265,9 +265,11 @@ Console.WriteLine(new TicTacToe().TictactoeGame(movesDraw));*/
 
 //new IntersectionOfTwoArraysII().Intersect(new int[]{1,2,2,1}, new int[]{2,2});
 
-int[][] arr = {
+/*int[][] arr = {
     new int[] {1,2},
     new int[] {3,4}
 };
 
-new ReshapeMatrix().MatrixReshape(arr,1,4);
+new ReshapeMatrix().MatrixReshape(arr,1,4);*/
+
+new PascalsTriangle().Generate(5);
