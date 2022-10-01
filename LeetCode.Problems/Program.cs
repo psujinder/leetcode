@@ -274,4 +274,6 @@ new ReshapeMatrix().MatrixReshape(arr,1,4);*/
 
 //new PascalsTriangle().Generate(5);
 
-new FirstUniqueCharacter().FirstUniqChar("aabb");
+//new FirstUniqueCharacter().FirstUniqChar("aabb");
+
+new SortPeople().Sort(new string[]{"Mary","John","Emma"}, new int[]{180,165,170});
