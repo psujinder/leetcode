@@ -276,4 +276,6 @@ new ReshapeMatrix().MatrixReshape(arr,1,4);*/
 
 //new FirstUniqueCharacter().FirstUniqChar("aabb");
 
-new SortPeople().Sort(new string[]{"Mary","John","Emma"}, new int[]{180,165,170});
+//new SortPeople().Sort(new string[]{"Mary","John","Emma"}, new int[]{180,165,170});
+
+new LongestSubarrayBitwiseAnd().LongestSubarray(new int[]{1,2,3,3,2,2});
