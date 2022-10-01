@@ -278,4 +278,6 @@ new ReshapeMatrix().MatrixReshape(arr,1,4);*/
 
 //new SortPeople().Sort(new string[]{"Mary","John","Emma"}, new int[]{180,165,170});
 
-new LongestSubarrayBitwiseAnd().LongestSubarray(new int[]{1,2,3,3,2,2});
+//new LongestSubarrayBitwiseAnd().LongestSubarray(new int[]{1,2,3,3,2,2});
+
+new FindAllGoodIndices().GoodIndices(new int[]{693570,409751,33944,16682,26296,545257,827687,885741,970671},3);
