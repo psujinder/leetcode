@@ -331,4 +331,12 @@ int[][] edges = {
 
 
 //Console.WriteLine(new GraphValidTree().ValidTree(5,edges));
-Console.WriteLine(new GraphValidTree().ValidTree(5,edges));
+//Console.WriteLine(new GraphValidTree().ValidTree(5,edges));
+
+int[][] isConnected = {
+    new int[] {1,1,0},
+    new int[] {1,1,0},
+    new int[] {0,0,1}
+};
+
+Console.WriteLine(new NumberofProvinces().FindCircleNum(isConnected));
