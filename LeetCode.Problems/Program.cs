@@ -280,4 +280,55 @@ new ReshapeMatrix().MatrixReshape(arr,1,4);*/
 
 //new LongestSubarrayBitwiseAnd().LongestSubarray(new int[]{1,2,3,3,2,2});
 
-new FindAllGoodIndices().GoodIndices(new int[]{693570,409751,33944,16682,26296,545257,827687,885741,970671},3);
+//new FindAllGoodIndices().GoodIndices(new int[]{693570,409751,33944,16682,26296,545257,827687,885741,970671},3);
+
+int[][] flights1 = {
+    new int[] {0,1,100},
+    new int[] {1,2,100},
+    new int[] {2,0,100},
+    new int[] {1,3,600},
+    new int[] {2,3,200},
+};
+
+//Console.WriteLine(new CheapestFlightsWithinKStops().FindCheapestPrice(4, flights1, 0,3,1));
+
+int[][] flights2 = {
+    new int[] {3,4,4},
+    new int[] {2,5,6},
+    new int[] {4,7,10},
+    new int[] {9,6,5},
+    new int[] {7,4,4},
+    new int[] {6,2,10},
+    new int[] {6,8,6},
+    new int[] {7,9,4},
+    new int[] {1,5,4},
+    new int[] {1,0,4},
+    new int[] {9,7,3},
+    new int[] {7,0,5},
+    new int[] {6,5,8},
+    new int[] {1,7,6},
+    new int[] {4,0,9},
+    new int[] {5,9,1},
+    new int[] {8,7,3},
+    new int[] {1,2,6},
+    new int[] {4,1,5},
+    new int[] {5,2,4},
+    new int[] {1,9,1},
+    new int[] {7,8,10},
+    new int[] {0,4,2},
+    new int[] {7,2,8},
+};
+
+//Console.WriteLine(new CheapestFlightsWithinKStops().FindCheapestPrice(10, flights2, 6,0,7));
+
+int[][] edges = {
+    new int[] {0,1},
+    new int[] {1,2},
+    new int[] {2,3},
+    new int[] {1,3},
+    new int[] {1,4},
+};
+
+
+//Console.WriteLine(new GraphValidTree().ValidTree(5,edges));
+Console.WriteLine(new GraphValidTree().ValidTree(5,edges));
