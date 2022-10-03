@@ -1,11 +1,12 @@
 namespace LeetCode.Problems;
-using System.Numerics;
 
-public class DungeonGame2{
+public class DungeonGame{
 
-    public int CalculateMinimumHP(int[][] dungeon){
-        int[,] dp = new int[dungeon.Length, dungeon[0].Length];
-        return CalculateHealth(0,0,dungeon, dp);
+    
+    public int CalculateMinimumHP(int[][] dungeon) {
+        
+       int[,] dp = new int[dungeon.Length, dungeon[0].Length];
+       return CalculateHealth(0,0,dungeon, dp);
     }
 
     private int CalculateHealth(int x, int y, int[][] dungeon, int[,] dp){
@@ -29,5 +30,4 @@ public class DungeonGame2{
         return  dp[x,y]= Math.Max(1, Math.Min(CalculateHealth(x+1, y, dungeon,dp) - dungeon[x][y], CalculateHealth(x,y+1,dungeon,dp)- dungeon[x][y]));
 
     }
-
 }

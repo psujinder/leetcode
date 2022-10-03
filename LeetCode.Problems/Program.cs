@@ -404,4 +404,12 @@ int[][] states3 = {
     new int[]{}
 };
 
-Console.WriteLine(new EventualSafeStates().EventualSafeNodes(states));
+//Console.WriteLine(new EventualSafeStates().EventualSafeNodes(states));
+
+int[][] dungeon = {
+    new int[]{-2,-3,3},
+    new int[]{-5,-10,1},
+    new int[]{10,30,-5}
+};
+
+Console.WriteLine(new DungeonGame().CalculateMinimumHP(dungeon));
