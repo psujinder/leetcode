@@ -376,4 +376,32 @@ int[][] connected = {
     new int[]{3,4}
 };
 
-Console.WriteLine(new NumberOfConnectedComponents().CountComponents(5,connected));
+//Console.WriteLine(new NumberOfConnectedComponents().CountComponents(5,connected));
+
+int[][] states = {
+    new int[]{1,2},
+    new int[]{2,3},
+    new int[]{5},
+    new int[]{0},
+    new int[]{5},
+    new int[]{},
+    new int[]{}
+};
+
+int[][] states2 = {
+    new int[]{1,2,3,4},
+    new int[]{1,2},
+    new int[]{3,4},
+    new int[]{0,4},
+    new int[]{}
+};
+
+int[][] states3 = {
+    new int[]{},
+    new int[]{0,2,3,4},
+    new int[]{3},
+    new int[]{4},
+    new int[]{}
+};
+
+Console.WriteLine(new EventualSafeStates().EventualSafeNodes(states));
