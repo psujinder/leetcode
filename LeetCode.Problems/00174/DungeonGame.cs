@@ -5,29 +5,17 @@ public class DungeonGame{
     
     public int CalculateMinimumHP(int[][] dungeon) {
         
-       int[,] dp = new int[dungeon.Length, dungeon[0].Length];
-       return CalculateHealth(0,0,dungeon, dp);
+      return calculateMinimumHP(0, 0, dungeon);
     }
 
-    private int CalculateHealth(int x, int y, int[][] dungeon, int[,] dp){
+     private int calculateMinimumHP(int r, int c, int[][] dungeon) {
+        if ((r == dungeon.Length && c == dungeon[0].Length - 1) || (r == dungeon.Length - 1 && c == dungeon[0].Length)) return 1;
+        if (r >= dungeon.Length || c >= dungeon[0].Length) return Int32.MaxValue;
 
-        if(x == dungeon.Length-1 && y == dungeon[0].Length -1){
-            return dungeon[x][y] > 0 ? 1 : Math.Abs(dungeon[x][y])+1;
-        }
+        int hp1 = calculateMinimumHP(r, c + 1, dungeon);
+        int hp2 = calculateMinimumHP(r + 1, c, dungeon);
+        int health = Math.Min(hp1, hp2) - dungeon[r][c];
 
-        if(dp[x,y] != 0)
-            return dp[x,y];
-
-        if (x == dungeon.Length -1){
-            return  dp[x,y]= Math.Max(1, CalculateHealth(x, y+1, dungeon,dp)- dungeon[x][y]);
-        }
-
-        if (y == dungeon[0].Length -1){
-            return  dp[x,y]=Math.Max(1, CalculateHealth(x+1, y, dungeon,dp)- dungeon[x][y]);
-
-        }
-
-        return  dp[x,y]= Math.Max(1, Math.Min(CalculateHealth(x+1, y, dungeon,dp) - dungeon[x][y], CalculateHealth(x,y+1,dungeon,dp)- dungeon[x][y]));
-
+        return health > 0 ? health : 1;
     }
 }
