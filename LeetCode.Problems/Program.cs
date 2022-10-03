@@ -348,4 +348,32 @@ int[][] grid = {
     new int[] {0,0,0,0,0,0,0,1,1,0,0,0,0}
 };
 
-Console.WriteLine(new MaxAreaIsland().MaxAreaOfIsland(grid));
+//Console.WriteLine(new MaxAreaIsland().MaxAreaOfIsland(grid));
+
+int[][] closedGrid = {
+    new int[] {1,1,1,1,1,1,1,0},
+    new int[] {1,0,0,0,0,1,1,0},
+    new int[] {1,0,1,0,1,1,1,0},
+    new int[] {1,0,0,0,0,1,0,1},
+    new int[] {1,1,1,1,1,1,1,0}
+};
+
+//Console.WriteLine(new NumberOfClosedIslands().ClosedIsland(closedGrid));
+
+int[][] enclave = {
+    new int[] {0,0,0,0},
+    new int[] {1,0,1,0},
+    new int[] {0,1,1,0},
+    new int[] {0,0,0,0}
+};
+
+//Console.WriteLine(new NumerOfEnclaves().NumEnclaves(enclave));
+
+int[][] connected = {
+    new int[]{0,1},
+    new int[]{1,2},
+    new int[]{2,3},
+    new int[]{3,4}
+};
+
+Console.WriteLine(new NumberOfConnectedComponents().CountComponents(5,connected));

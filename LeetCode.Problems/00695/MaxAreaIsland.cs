@@ -28,8 +28,13 @@ public class MaxAreaIsland{
             }
 
             visited[i][j] = true;
-            return 1 + dfs(i-1,j,grid,visited) + dfs(i+1,j,grid,visited) +
-                dfs(i,j-1,grid,visited) + dfs(i,j+1,grid,visited);
+
+            int d1 = dfs(i-1,j,grid,visited);
+            int d2 = dfs(i+1,j,grid,visited);
+            int d3 = dfs(i,j-1,grid,visited);
+            int d4 = dfs(i,j+1,grid,visited);
+
+            return 1 + d1 + d3 + d4 + d2;
 
     }
 
