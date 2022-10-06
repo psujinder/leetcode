@@ -412,4 +412,6 @@ int[][] dungeon = {
     new int[]{10,30,-5}
 };
 
-Console.WriteLine(new DungeonGame().CalculateMinimumHP(dungeon));
+//Console.WriteLine(new DungeonGame().CalculateMinimumHP(dungeon));
+
+Console.WriteLine(new RemoveDigitFromNumber().RemoveDigit("2464",'6'));

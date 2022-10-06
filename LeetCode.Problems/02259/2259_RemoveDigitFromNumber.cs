@@ -5,16 +5,18 @@ public class RemoveDigitFromNumber{
     public string RemoveDigit(string number, char digit){
         string num  = "";
 
-        List<int> nums = new List<int>();
         int idx = 0;
+        
+        for(int i=0; i< number.Length; i++){
+            if(number[i] == digit){
+                idx = i;
+                if(i+1 < number.Length  && number[i+1]> number[i]) {
+                    break;
+                }
+            }
+        }
 
-        //get the indeces where the digit occurs in the number 
-       
-
-        //remove the digit from each index and store the resultant number in an int array
-
-        //find the max of the array
-
+        num = number.Substring(0,idx) + number.Substring(idx+1);
 
         return num;
     }
