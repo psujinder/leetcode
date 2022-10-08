@@ -432,4 +432,6 @@ int[][] triangle = {
     new int[]{4,1,8,3}
 };
 
-Console.WriteLine(new Triangle().MinimumTotal(triangle));
+//Console.WriteLine(new Triangle().MinimumTotal(triangle));
+
+Console.WriteLine(new Subsets().Subset(new int[]{3,2,4,1}));
