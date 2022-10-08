@@ -414,4 +414,22 @@ int[][] dungeon = {
 
 //Console.WriteLine(new DungeonGame().CalculateMinimumHP(dungeon));
 
-Console.WriteLine(new RemoveDigitFromNumber().RemoveDigit("2464",'6'));
+//Console.WriteLine(new RemoveDigitFromNumber().RemoveDigit("2464",'6'));
+//Console.WriteLine(new ThreeSums().ThreeSum(new int[]{-1,0,1,2,-1,-4}));
+//Console.WriteLine(new EqualSumArrayWithMinOperations().MinOperations(new int[]{1,2,3,4,5,6}, new int[]{1,1,2,2,2,2}));
+//Console.WriteLine(new EqualSumArrayWithMinOperations().MinOperations(new int[]{1,2,3,4,5,6}, new int[]{6}));
+//Console.WriteLine(new EqualSumArrayWithMinOperations().MinOperations(new int[]{6,6}, new int[]{1}));
+//Console.WriteLine(new Combinations().Combine(4,2));
+//Console.WriteLine(new Permutations().Permute(new int[]{1,2,3}));
+//Console.WriteLine(new LetterCasePermutation().LetterCasePermute("a1b2"));
+//Console.WriteLine(new LetterCasePermutation().LetterCasePermute("3z4bc"));
+//Console.WriteLine(new HouseRobber().Rob(new int[]{2,1,1,2}));
+
+int[][] triangle = {
+    new int[]{2},
+    new int[]{3,4},
+    new int[]{6,5,7},
+    new int[]{4,1,8,3}
+};
+
+Console.WriteLine(new Triangle().MinimumTotal(triangle));
