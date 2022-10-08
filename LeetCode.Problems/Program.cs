@@ -438,4 +438,6 @@ int[][] triangle = {
 
 //Console.WriteLine(new Subsets2().SubsetsWithDup(new int[]{1,2,2}));
 
-Console.WriteLine(new Permutations2().PermuteUnique(new int[]{1,1,2}));
+//Console.WriteLine(new Permutations2().PermuteUnique(new int[]{1,1,2}));
+
+Console.WriteLine(new CombinationSum().CombSum(new int[]{2,3,6,7}, 7));
