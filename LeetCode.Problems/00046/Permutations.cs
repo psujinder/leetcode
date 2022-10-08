@@ -11,24 +11,24 @@ public class Permutations {
         return results;
     }
 
-    public void backtrack(int n, List<int> nums, int i){
+    public void backtrack(int n, List<int> nums, int first){
 
-        if(i == n){
+        if(first == n){
             results.Add(new List<int>(nums));
             return;
         }
 
-        for(int idx = i; idx < n; idx++){
+        for(int idx = first; idx < n; idx++){
 
-            var tmp = nums[i];
-            nums[i] = nums[idx];
+            var tmp = nums[first];
+            nums[first] = nums[idx];
             nums[idx] = tmp;
 
 
-            backtrack(n,nums, i+1);
+            backtrack(n,nums, first+1);
 
-            var tmp2 = nums[i];
-            nums[i] = nums[idx];
+            var tmp2 = nums[first];
+            nums[first] = nums[idx];
             nums[idx] = tmp2;
         }
 
