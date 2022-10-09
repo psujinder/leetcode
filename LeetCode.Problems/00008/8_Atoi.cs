@@ -82,7 +82,7 @@ public class Atoi{
         while(index < n && char.IsNumber(s[index])){
             int digit = s[index] - '0';
 
-            if(value > Int32.MaxValue / 10 || (value == Int32.MaxValue && digit > Int32.MaxValue % 10)){
+            if(value > Int32.MaxValue / 10 || (value == Int32.MaxValue /10 && digit > Int32.MaxValue % 10)){
                 return (sign == 1)? Int32.MaxValue : Int32.MinValue;
             }
 
