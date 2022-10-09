@@ -443,4 +443,55 @@ int[][] triangle = {
 //Console.WriteLine(new CombinationSum().CombSum(new int[]{2,3,6,7}, 7));
 
 //Console.Write(new ValidPalindrome().IsPalindrome(".,"));
-Console.WriteLine(new Atoi().MyAtoi2("2147483648"));
+//Console.WriteLine(new Atoi().MyAtoi2("2147483648"));
+
+ListNode l1_1 = new ListNode();
+l1_1.val = 2;
+
+ListNode l1_2 = new ListNode();
+l1_2.val = 4;
+
+ListNode l1_3 = new ListNode();
+l1_3.val = 3;
+
+l1_1.next = l1_2;
+l1_2.next = l1_3;
+
+ListNode l2_1 = new ListNode();
+l2_1.val = 5;
+
+ListNode l2_2 = new ListNode();
+l2_2.val = 6;
+
+ListNode l2_3 = new ListNode();
+l2_3.val = 4;
+
+l2_1.next = l2_2;
+l2_2.next = l2_3;
+
+ListNode ArrayToList(int[] arr, bool isReverse){
+    
+    ListNode lst = new ListNode();
+    ListNode head = lst;
+
+    if(!isReverse){
+        for(int i=0; i< arr.Length-1; i++){
+            lst.val = arr[i];
+            lst.next = new ListNode();
+            lst = lst.next;
+        }
+        lst.val = arr.Last();
+    }else{
+        for(int i=arr.Length-1; i> 0; i--){
+            lst.val = arr[i];
+            lst.next = new ListNode();
+            lst = lst.next;
+        }
+        lst.val = arr.First();
+    }
+    return head;
+}
+
+
+//Console.WriteLine(new AddTwoNumbers().AddTwoNums(ArrayToList(new int[]{9,9,9,9,9,9,9}), ArrayToList(new int[]{9,9,9,9})));
+Console.WriteLine(new AddTwoNumbers().AddTwoNums(ArrayToList(new int[]{2,4,3}, false), ArrayToList(new int[]{5,6,4},false)));
