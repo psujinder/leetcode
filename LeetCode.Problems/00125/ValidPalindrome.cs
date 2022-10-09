@@ -1,5 +1,7 @@
 namespace LeetCode.Problems;
 
+using System.Text;
+
 public class ValidPalindrome{
 
     public bool IsPalindrome(string s) {

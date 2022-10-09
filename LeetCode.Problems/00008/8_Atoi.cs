@@ -8,58 +8,91 @@ public class Atoi{
 
         int index = 0;
 
-        //interate through the array to ignore any leading white spaces
-        while(s[index] == ' '){
-            index ++;
+        s = s.TrimStart();
+
+        if (s.Length == 0 ){
+            return 0;
         }
 
-        //use a variable to indicate is the value is negative or positive (positiv by default)
-        int sign = 1;
+        int sign =1;
 
-        //next the next character in the sign to determin the if the result is negative or positive number.
-        //increment the index only if the character is '-' or '+'
         if(s[index] == '-'){
             sign = -1;
             index++;
-        }else if(s[index] == '+'){
-            sign = 1;
+        }else if (s[index] == '+'){
+            index++;
+        }
+
+        //max integer 2,147,483,647
+        //min integer -2,147,483,648
+        int value = 0;
+
+        int maxValue = Int32.MaxValue / 10;
+        int minValue = Int32.MinValue / 10;
+
+        while( index < s.Length && char.IsNumber(s[index])){
+
+            int tmpDigit = s[index] -'0';
+        
+            if(sign == 1){
+                if(value < maxValue){
+                    value = value *10 + tmpDigit;
+                }else if (value == maxValue && tmpDigit <= 7 ){
+                    value = value *10 + tmpDigit;
+                }else if (value == maxValue && tmpDigit > 7 || value > maxValue) {
+                    value = Int32.MaxValue;
+                }
+            }else{
+                if(value > minValue){
+                    value = (value *10 - tmpDigit);
+                }else if (value == minValue && tmpDigit <= 8 ){
+                    value = value *10 - tmpDigit;
+                }else if (value == minValue && tmpDigit > 8 || value < minValue) {
+                    value = Int32.MinValue;
+                }
+            }
+            
             index++;
         }
         
-        //variable to store the output of the computation
-        int result = 0;
-        bool isDigit = true;
+        return value;
+    }
 
-        int maxValue = int.MaxValue /10;
-        int maxValueTail = int.MaxValue % 10;
 
-        //interate through the rest of the string until the character being evaluated is a digit or the end of the string has been reached. 
-        while(index < s.Length){
-            
-            var tmpChar = s[index];
-            isDigit = char.IsDigit(tmpChar);
-            if(!isDigit)
-                return result;
+    public int MyAtoi2(string s){
 
-            var tmpDigit = tmpChar - '0';
+        int index = 0;
+        int n = s.Length;
+        int sign = 1;
 
-            if(result < maxValue){
-                result = result*10 + tmpDigit;
-            }else if (result == maxValue && (tmpDigit > 0 && tmpDigit <= maxValueTail)){
-                result = result*10 + tmpDigit;
-                return result;
-            } else if (result == maxValue && (tmpDigit > maxValueTail)){
-                return int.MaxValue;
-            }
-            else if (result > maxValue){
-                return int.MaxValue;
-            }
-
+        while(index < n && s[index]== ' '){
             index++;
         }
 
-        //multiple the result with the sign before returning the result. 
-        return result*sign;
+        if(index < n && s[index] == '-'){
+            sign = -1;
+            index++;
+        }else if(index < n && s[index] == '+'){
+            sign = 1;
+            index++;
+        }
+
+        int value = 0;
+
+        while(index < n && char.IsNumber(s[index])){
+            int digit = s[index] - '0';
+
+            if(value > Int32.MaxValue / 10 || (value == Int32.MaxValue && digit > Int32.MaxValue % 10)){
+                return (sign == 1)? Int32.MaxValue : Int32.MinValue;
+            }
+
+            value = value*10 +digit;
+            index++;
+        }
+
+        return value * sign;
+
+        
     }
 
 }

@@ -442,4 +442,5 @@ int[][] triangle = {
 
 //Console.WriteLine(new CombinationSum().CombSum(new int[]{2,3,6,7}, 7));
 
-Console.Write(new ValidPalindrome().IsPalindrome(".,"));
+//Console.Write(new ValidPalindrome().IsPalindrome(".,"));
+Console.WriteLine(new Atoi().MyAtoi2("2147483648"));
