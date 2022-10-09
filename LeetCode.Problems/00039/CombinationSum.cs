@@ -9,12 +9,7 @@ public class CombinationSum{
         if(target < candidates.Min()){
             return results;
         }
-
-        Array.Sort(candidates);
-        //for(int i = 0; i< candidates.Length; i++){
-            backtrack(candidates, target,0,  new List<int>());
-        //}
-        
+        backtrack(candidates, target,0,  new List<int>());
         return results;
     }
 
@@ -34,7 +29,6 @@ public class CombinationSum{
             backtrack(candidates,target, i, combo);
             combo.RemoveAt(combo.Count-1);
         }
-        
 
     }
 

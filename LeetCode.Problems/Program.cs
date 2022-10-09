@@ -440,4 +440,6 @@ int[][] triangle = {
 
 //Console.WriteLine(new Permutations2().PermuteUnique(new int[]{1,1,2}));
 
-Console.WriteLine(new CombinationSum().CombSum(new int[]{2,3,6,7}, 7));
+//Console.WriteLine(new CombinationSum().CombSum(new int[]{2,3,6,7}, 7));
+
+Console.Write(new ValidPalindrome().IsPalindrome(".,"));
