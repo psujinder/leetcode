@@ -6,23 +6,26 @@ public class CoinChangeProblem{
 
     public int CoinChange(int[] coins, int amount) {
     
-        if (amount < 1) return 0;
-        return coinChange(coins, amount, new int[amount]);
-    }
+        if(coins == null || coins.Length ==0) 
+            return 0;
+    
+        int [] dp = new int[amount+1];
+        Array.Fill(dp, Int32.MaxValue);
+        dp[0] = 0;
 
-    private int coinChange(int[] coins, int rem, int[] count) {
-        if (rem < 0) return -1;
-        if (rem == 0) return 0;
-        if (count[rem - 1] != 0) return count[rem - 1];
-        int min = Int32.MaxValue;
-        foreach(int coin in coins) {
-            int res = coinChange(coins, rem - coin, count);
-            if (res >= 0 && res < min)
-                min = 1 + res;
+        foreach(int coin in coins){
+            for(int i=1; i < amount+1; i++){
+                if(coin <= i && dp[i-coin] != Int32.MaxValue && dp[i-coin]+1 < dp[i]){
+                    dp[i] = dp[i-coin]+1;
+                }
+            }
         }
-        count[rem - 1] = (min == Int32.MaxValue) ? -1 : min;
-        return count[rem - 1];
-  }
+
+        if(dp[amount]==Int32.MaxValue)
+            return -1;
+        return dp[amount];
+        
+    }
 
     
 
