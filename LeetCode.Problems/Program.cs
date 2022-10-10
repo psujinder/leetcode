@@ -498,4 +498,5 @@ ListNode ArrayToList(int[] arr, bool isReverse){
 //Console.Write(new CoinChange2Problem().CoinChange(11,new int[]{1,2,5}));
 //Console.Write(new CoinChangeProblem().CoinChange(new int[]{186,419,83,408},6249));
 //Console.WriteLine(new CoinChange2Problem().CoinChange(500, new int[]{1,2,5}));
-Console.WriteLine(new MinimumDeletionsUniqueString().MinDeletions("bbcebab"));
+//Console.WriteLine(new MinimumDeletionsUniqueString().MinDeletions("bbcebab"));
+Console.WriteLine(new LongestHappyString().LongestDiverseString(2,2,1));
