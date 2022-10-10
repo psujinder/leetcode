@@ -500,4 +500,24 @@ ListNode ArrayToList(int[] arr, bool isReverse){
 //Console.WriteLine(new CoinChange2Problem().CoinChange(500, new int[]{1,2,5}));
 //Console.WriteLine(new MinimumDeletionsUniqueString().MinDeletions("bbcebab"));
 //Console.WriteLine(new LongestHappyString().LongestDiverseString(2,2,1));*/
-Console.WriteLine(new PhoneNumberCombination().LetterCombinations("2345"));
+//Console.WriteLine(new PhoneNumberCombination().LetterCombinations("2345"));
+
+char[][] board = {
+    new char[]{'o','a','n','n'},
+    new char[]{'e','t','a','e'},
+    new char[]{'i','h','k','r'},
+    new char[]{'i','f','l','v'}
+};
+
+char[][] board2= {
+    new char[]{'o','a','b','n'},
+    new char[]{'o','t','a','e'},
+    new char[]{'a','h','k','r'},
+    new char[]{'a','f','l','v'}
+};
+
+char[][] board3= {
+    new char[]{'a','b'}
+};
+
+Console.WriteLine(new WordSearch2().FindWords(board3, new string[]{"ba"}));

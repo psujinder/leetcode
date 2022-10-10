@@ -1,6 +1,6 @@
 namespace LeetCode.Problems;
 
-public class TrieNode {
+/*public class TrieNode {
     
     private Dictionary<char, TrieNode> children;
     private bool isEnd;
@@ -77,4 +77,4 @@ public class Trie{
 
         return node != null;
     }
-}
+}*/
