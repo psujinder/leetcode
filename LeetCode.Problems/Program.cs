@@ -495,5 +495,6 @@ ListNode ArrayToList(int[] arr, bool isReverse){
 
 //Console.WriteLine(new AddTwoNumbers().AddTwoNums(ArrayToList(new int[]{9,9,9,9,9,9,9}), ArrayToList(new int[]{9,9,9,9})));
 //Console.WriteLine(new AddTwoNumbers().AddTwoNums(ArrayToList(new int[]{2,4,3}, false), ArrayToList(new int[]{5,6,4},false)));
-Console.Write(new CoinChangeProblem().CoinChange(new int[]{1,2,5},11));
+//Console.Write(new CoinChange2Problem().CoinChange(11,new int[]{1,2,5}));
 //Console.Write(new CoinChangeProblem().CoinChange(new int[]{186,419,83,408},6249));
+Console.WriteLine(new CoinChange2Problem().CoinChange(500, new int[]{1,2,5}));
