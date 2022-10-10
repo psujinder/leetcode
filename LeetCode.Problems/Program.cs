@@ -445,7 +445,7 @@ int[][] triangle = {
 //Console.Write(new ValidPalindrome().IsPalindrome(".,"));
 //Console.WriteLine(new Atoi().MyAtoi2("2147483648"));
 
-ListNode l1_1 = new ListNode();
+/*ListNode l1_1 = new ListNode();
 l1_1.val = 2;
 
 ListNode l1_2 = new ListNode();
@@ -499,4 +499,5 @@ ListNode ArrayToList(int[] arr, bool isReverse){
 //Console.Write(new CoinChangeProblem().CoinChange(new int[]{186,419,83,408},6249));
 //Console.WriteLine(new CoinChange2Problem().CoinChange(500, new int[]{1,2,5}));
 //Console.WriteLine(new MinimumDeletionsUniqueString().MinDeletions("bbcebab"));
-Console.WriteLine(new LongestHappyString().LongestDiverseString(2,2,1));
+//Console.WriteLine(new LongestHappyString().LongestDiverseString(2,2,1));*/
+Console.WriteLine(new PhoneNumberCombination().LetterCombinations("2345"));
