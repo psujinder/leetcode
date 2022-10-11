@@ -13,7 +13,7 @@ public class ValidateBinarySearchTree{
          if (node == null)
             return true;
 
-        if ((low != null && node.val > low) || (high!= null && node.val< high)){
+        if ((low != null && node.val <= low) || (high!= null && node.val >= high)){
             return false;
         }
         
