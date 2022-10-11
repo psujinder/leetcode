@@ -554,4 +554,6 @@ int[][] matrix4 = {
     new int[]{18,21,23,26,30}
 };
 
-Console.WriteLine(new Search2DMatrix2().SearchMatrix(matrix4,5));
+//Console.WriteLine(new Search2DMatrix2().SearchMatrix(matrix4,5));
+
+new MergeSortedArray().Merge2(new int[]{1,2,3,0,0,0},3,new int[]{2,5,6},3);

@@ -2,55 +2,24 @@ namespace LeetCode.Problems;
 
 public class MergeSortedArray {
 
-    public void Merge(int[] nums1, int m, int[] nums2, int n) {
-        
-         int[] mergedArray = new int[n+m];
+     public void Merge(int[] nums1, int m, int[] nums2, int n) {
 
-        int i = 0;
-        int j = 0;
-        int k = 0;
+            int[] nums1Copy = new int[m+n];
 
-        while (i < m && j < n){
-
-            if (nums1[i] < nums2[j]){
-                mergedArray[k] = nums1[i];
-                i++;
-                k++;
-                continue;
+            for(int i=0; i< m; i++){
+                nums1Copy[i] = nums1[i];
             }
 
-            if (nums1[i] == nums2[j]){
-                mergedArray[k] = nums1[i];
-                mergedArray[k+1] = nums2[j];
-                i++;
-                j++;
-                k = k +2;
-                continue;
+            int p1=0, p2=0;
+
+            for(int i = 0; i < m+n; i++){
+                
+                if(p2 >=n || ( p1 <m && nums1Copy[p1] < nums2[p2])){
+                    nums1[i] = nums1Copy[p1++];
+                }else{
+                    nums1[i] = nums2[p2++];
+                }
             }
 
-            if (nums2[j] < nums1[i]){
-                mergedArray[k] = nums2[j];
-                j++;
-                k++;
-                continue;
-            }
-        }
-        
-        while (i < m){
-            mergedArray[k] = nums1[i];
-            i++;
-            k++;
-        }
-    
-        while (j < n){
-            mergedArray[k] = nums2[j];
-            j++;
-            k++;
-        }
-    
-        for(i=0; i<=nums1.Length-1; i++){   
-            nums1[i] = mergedArray[i];
-        }
-        
-    }
+     }
 }
