@@ -541,4 +541,7 @@ int[][] matrix3 = {
     new int[]{3},
 };
 
-Console.WriteLine(new Search2DMatrix().SearchMatrix(matrix3, 2));
+//Console.WriteLine(new Search2DMatrix().SearchMatrix(matrix3, 2));
+//Console.WriteLine(new SearchInRotatedSortedArray().Search(new int[]{4,5,6,7,0,1,2},0));
+//Console.WriteLine(new SearchInRotatedSortedArray().Search(new int[]{1,3},3));
+Console.WriteLine(new SearchInRotatedSortedArray().Search(new int[]{4,5,6,7,8,1,2},8));
