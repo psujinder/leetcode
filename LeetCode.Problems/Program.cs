@@ -544,4 +544,14 @@ int[][] matrix3 = {
 //Console.WriteLine(new Search2DMatrix().SearchMatrix(matrix3, 2));
 //Console.WriteLine(new SearchInRotatedSortedArray().Search(new int[]{4,5,6,7,0,1,2},0));
 //Console.WriteLine(new SearchInRotatedSortedArray().Search(new int[]{1,3},3));
-Console.WriteLine(new SearchInRotatedSortedArray().Search(new int[]{4,5,6,7,8,1,2},8));
+//Console.WriteLine(new SearchInRotatedSortedArray().Search(new int[]{4,5,6,7,8,1,2},8));
+
+int[][] matrix4 = {
+    new int[]{1,4,7,11,15},
+    new int[]{2,5,8,12,19},
+    new int[]{3,6,9,16,22},
+    new int[]{10,13,14,17,24},
+    new int[]{18,21,23,26,30}
+};
+
+Console.WriteLine(new Search2DMatrix2().SearchMatrix(matrix4,5));
