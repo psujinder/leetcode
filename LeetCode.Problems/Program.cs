@@ -520,4 +520,7 @@ char[][] board3= {
     new char[]{'a','b'}
 };
 
-Console.WriteLine(new WordSearch2().FindWords(board3, new string[]{"ba"}));
+//Console.WriteLine(new WordSearch2().FindWords(board3, new string[]{"ba"}));
+
+//Console.WriteLine(new WildcardMatching().IsMatch("ererer","a******bc*****c"));
+new SortColorsProblem().SortColors2(new int[]{1,2,0});

@@ -38,7 +38,7 @@ public class WordSearch2{
             }
         }
 
-        return results.cou
+        return results;
     }
 
     private void find(char[][] board, TrieNode node, int row, int col){
