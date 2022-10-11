@@ -523,4 +523,5 @@ char[][] board3= {
 //Console.WriteLine(new WordSearch2().FindWords(board3, new string[]{"ba"}));
 
 //Console.WriteLine(new WildcardMatching().IsMatch("ererer","a******bc*****c"));
-new SortColorsProblem().SortColors2(new int[]{1,2,0});
+//new SortColorsProblem().SortColors2(new int[]{1,2,0});
+Console.WriteLine(new MinInRotatedSortedArray().FindMin(new int[]{11,13,15,17}));
