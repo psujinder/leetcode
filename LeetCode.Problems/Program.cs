@@ -524,4 +524,21 @@ char[][] board3= {
 
 //Console.WriteLine(new WildcardMatching().IsMatch("ererer","a******bc*****c"));
 //new SortColorsProblem().SortColors2(new int[]{1,2,0});
-Console.WriteLine(new MinInRotatedSortedArray().FindMin(new int[]{11,13,15,17}));
+//Console.WriteLine(new MinInRotatedSortedArray().FindMin(new int[]{11,13,15,17}));
+
+int[][] matrix = {
+    new int[]{1,3,5,7},
+    new int[]{10,11,16,20},
+    new int[]{23,30,34,60}
+};
+
+int[][] matrix2 = {
+    new int[]{1,3}
+};
+
+int[][] matrix3 = {
+    new int[]{1},
+    new int[]{3},
+};
+
+Console.WriteLine(new Search2DMatrix().SearchMatrix(matrix3, 2));
