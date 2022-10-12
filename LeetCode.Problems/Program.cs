@@ -554,6 +554,32 @@ int[][] matrix4 = {
     new int[]{18,21,23,26,30}
 };
 
+int[][] intervals = {
+    new int[]{1,3},
+    new int[]{2,6},
+    new int[]{8,10},
+    new int[]{15,18}
+};
+
+int[][] intervals2 = {
+    new int[]{1,4},
+    new int[]{4,5}
+};
+
+int[][] intervals3 = {
+    new int[]{1,4},
+    new int[]{0,5}
+};
+
+int[][] intervals4 = {
+    new int[]{2,3},
+    new int[]{4,5},
+    new int[]{6,7},
+    new int[]{8,9},
+    new int[]{1,10},
+};
+
 //Console.WriteLine(new Search2DMatrix2().SearchMatrix(matrix4,5));
 
-new MergeSortedArray().Merge2(new int[]{1,2,3,0,0,0},3,new int[]{2,5,6},3);
+//new MergeSortedArray().Merge2(new int[]{1,2,3,0,0,0},3,new int[]{2,5,6},3);
+Console.WriteLine(new MergeIntervals().Merge(intervals4));
