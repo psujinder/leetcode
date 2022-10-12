@@ -585,6 +585,39 @@ int[][] intervals4 = {
 //Console.WriteLine(new MergeIntervals().Merge(intervals4));
 
 //Console.WriteLine(new GasStation().CanCompleteCircuit(new int[]{1,2,3,4,5}, new int[]{3,4,5,1,2}));
-Console.WriteLine(new GasStation().CanCompleteCircuit(new int[]{2,3,4}, new int[]{3,4,3}));
+//Console.WriteLine(new GasStation().CanCompleteCircuit(new int[]{2,3,4}, new int[]{3,4,3}));
 
 //Console.WriteLine(new GasStation().CanCompleteCircuit(new int[]{4,5,3,1,4}, new int[]{5,4,3,4,2}));
+
+TreeNode node1 = new TreeNode();
+node1.val = 1;
+
+TreeNode node2 = new TreeNode();
+node2.val = 2;
+
+TreeNode node3 = new TreeNode();
+node3.val = 3;
+
+node1.left = node3;
+node3.right = node2;
+
+
+//new RecoverBST().RecoverTree(node1);
+
+int[][] reservedSeats = {
+    new int[]{1,2},
+    new int[]{1,3},
+    new int[]{1,8},
+    new int[]{2,6},
+    new int[]{3,1},
+    new int[]{3,0}
+};
+
+int[][] reservedSeats2 = {
+    new int[]{4,3},
+    new int[]{1,4},
+    new int[]{4,6},
+    new int[]{1,7}
+};
+
+Console.WriteLine(new CinemaSeatAllocation().MaxNumberOfFamilies(3, reservedSeats2));
