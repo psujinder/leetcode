@@ -620,4 +620,12 @@ int[][] reservedSeats2 = {
     new int[]{1,7}
 };
 
-Console.WriteLine(new CinemaSeatAllocation().MaxNumberOfFamilies(3, reservedSeats2));
+//Console.WriteLine(new CinemaSeatAllocation().MaxNumberOfFamilies(3, reservedSeats2));
+
+int[][] mat = {
+    new int[]{1,2,3},
+    new int[]{4,5,6},
+    new int[]{7,8,9}
+};
+
+Console.WriteLine(new DiagonalTraverse().FindDiagonalOrder(mat));
