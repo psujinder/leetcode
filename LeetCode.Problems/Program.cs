@@ -582,4 +582,9 @@ int[][] intervals4 = {
 //Console.WriteLine(new Search2DMatrix2().SearchMatrix(matrix4,5));
 
 //new MergeSortedArray().Merge2(new int[]{1,2,3,0,0,0},3,new int[]{2,5,6},3);
-Console.WriteLine(new MergeIntervals().Merge(intervals4));
+//Console.WriteLine(new MergeIntervals().Merge(intervals4));
+
+//Console.WriteLine(new GasStation().CanCompleteCircuit(new int[]{1,2,3,4,5}, new int[]{3,4,5,1,2}));
+Console.WriteLine(new GasStation().CanCompleteCircuit(new int[]{2,3,4}, new int[]{3,4,3}));
+
+//Console.WriteLine(new GasStation().CanCompleteCircuit(new int[]{4,5,3,1,4}, new int[]{5,4,3,4,2}));
