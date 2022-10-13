@@ -629,6 +629,9 @@ int[][] mat = {
 };
 
 //Console.WriteLine(new DiagonalTraverse().FindDiagonalOrder(mat));
+int[][] coursemap0 = {
+    new int[]{1,0}
+};
 
 
 
@@ -658,4 +661,6 @@ int[][] coursemap3 = {
     new int[]{3,2}
 };
 
-Console.WriteLine(new CourseSchedule().CanFinish(5, coursemap3));
+//Console.WriteLine(new CourseSchedule().CanFinish(5, coursemap3));
+//Console.WriteLine(new CourseSchedule2().FindOrder(4, coursemap));
+Console.WriteLine(new CourseSchedule2().FindOrder(2, coursemap0));
