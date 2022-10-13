@@ -628,4 +628,34 @@ int[][] mat = {
     new int[]{7,8,9}
 };
 
-Console.WriteLine(new DiagonalTraverse().FindDiagonalOrder(mat));
+//Console.WriteLine(new DiagonalTraverse().FindDiagonalOrder(mat));
+
+
+
+int[][] coursemap = {
+    new int[]{1,0},
+    new int[]{2,0},
+    new int[]{3,1},
+    new int[]{3,2}
+};
+
+int[][] coursemap2 = {
+    new int[]{0,10},
+    new int[]{3,18},
+    new int[]{5,5},
+    new int[]{6,11},
+    new int[]{11,14},
+    new int[]{13,1},
+    new int[]{15,1},
+    new int[]{17,4}
+};
+
+
+int[][] coursemap3 = {
+    new int[]{1,4},
+    new int[]{2,4},
+    new int[]{3,1},
+    new int[]{3,2}
+};
+
+Console.WriteLine(new CourseSchedule().CanFinish(5, coursemap3));

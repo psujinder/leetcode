@@ -10,19 +10,22 @@ public class CourseSchedule{
         Dictionary<int,List<int>> courseMap = new Dictionary<int, List<int>>();
         List<int> visitedCourses = new List<int>();
 
-        //construct the graph of the rouces
-        
-        for(int i = 0; i< prerequisites.Length; i++){
-            if(courseMap.ContainsKey(prerequisites[i][0])){
-                courseMap[prerequisites[i][0]].AddRange(prerequisites[i].Skip(1).Take(prerequisites[i].Length-1));
-            }else{
-            courseMap.Add(prerequisites[i][0], prerequisites[i].Skip(1).Take(prerequisites[i].Length-1).ToList());
-            }
+        //construct the graph of the courses
+        for(int i=0; i< numCourses; i++){
+            courseMap.Add(i, new List<int>());
         }
 
-        bool[] path = new bool[numCourses];
+        for(int i=0; i< prerequisites.Length; i++){
+            courseMap[prerequisites[i][1]].Add(prerequisites[i][0]);
+        }
+
+
+        bool[] path;
+        bool[] visited = new bool[numCourses];
+
         for(int i=0; i < numCourses; i++){
-            if(IsCourseCyclic(i, courseMap, path)){
+            path = new bool[numCourses];
+            if(IsCourseCyclic(i, courseMap, path, visited)){
                 return false;
             }
         }
@@ -31,28 +34,31 @@ public class CourseSchedule{
 
     }
 
-    private bool IsCourseCyclic(int course, Dictionary<int,List<int>> courseMap, bool[] path){
+    private bool IsCourseCyclic(int course, Dictionary<int,List<int>> courseMap, bool[] path, bool[] visited){
 
-        bool ret = false;
+        if(visited[course])
+            return false;
 
         if(path[course])
             return true;
 
-        if(!courseMap.ContainsKey(course)){
+        if(courseMap[course].Count ==0){
+            visited[course] = true;
             return false;
         }
-        
-        path[course] = true;
 
-        foreach(var newCourse in courseMap[course]){
-            ret = IsCourseCyclic(newCourse, courseMap, path);
-            if (ret)
+        path[course] = true;
+       
+        bool ret = false;
+        foreach(int nextcourse in courseMap[course]){
+            ret = IsCourseCyclic(nextcourse, courseMap, path, visited);
+            if(ret){
                 break;
+            }
         }
 
-        path[course] = false;
-
-       return ret;
+        visited[course] = true;
+        return ret;
     }
 
 }
