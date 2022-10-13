@@ -663,4 +663,19 @@ int[][] coursemap3 = {
 
 //Console.WriteLine(new CourseSchedule().CanFinish(5, coursemap3));
 //Console.WriteLine(new CourseSchedule2().FindOrder(4, coursemap));
-Console.WriteLine(new CourseSchedule2().FindOrder(2, coursemap0));
+//Console.WriteLine(new CourseSchedule2().FindOrder(2, coursemap0));
+
+int[][] intervals2_1 = {
+    new int[]{0,30},
+    new int[]{5,10},
+    new int[]{15,20},
+};
+
+int[][] intervals2_2 = {
+    new int[]{9,10},
+    new int[]{4,9},
+    new int[]{4,17},
+};
+
+
+Console.WriteLine(new MeetingRooms2().MinMeetingRooms(intervals2_2));
