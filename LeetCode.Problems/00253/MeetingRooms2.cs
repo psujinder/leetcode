@@ -48,10 +48,7 @@ public class MeetingRooms2{
                 rooms.Add(i,new List<int[][]>(){mtg});
             }
         }
-        
-
         return rooms.Count;
-
     } 
 
 }
