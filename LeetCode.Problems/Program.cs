@@ -681,4 +681,12 @@ int[][] intervals2_2 = {
 //Console.WriteLine(new MeetingRooms2().MinMeetingRooms(intervals2_2));
 //Console.WriteLine(new WordLadder().LadderLength("hit", "cog", new string[]{"hot","dot","dog","lot","log","cog"}));
 
-Console.WriteLine(new GroupAnagramsProblem().GroupAnagrams(new string[]{"bdddddddddd","bbbbbbbbbbc"}));
+//Console.WriteLine(new GroupAnagramsProblem().GroupAnagrams(new string[]{"bdddddddddd","bbbbbbbbbbc"}));
+
+int[][] boxes = {
+    new int[]{1,3},
+    new int[]{2,2},
+    new int[]{3,1},
+};
+
+Console.WriteLine(new MaxUnitsOnTruck().MaximumUnits(boxes,4));
