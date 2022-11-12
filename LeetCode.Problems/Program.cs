@@ -589,17 +589,6 @@ int[][] intervals4 = {
 
 //Console.WriteLine(new GasStation().CanCompleteCircuit(new int[]{4,5,3,1,4}, new int[]{5,4,3,4,2}));
 
-TreeNode node1 = new TreeNode();
-node1.val = 1;
-
-TreeNode node2 = new TreeNode();
-node2.val = 2;
-
-TreeNode node3 = new TreeNode();
-node3.val = 3;
-
-node1.left = node3;
-node3.right = node2;
 
 
 //new RecoverBST().RecoverTree(node1);
@@ -689,4 +678,58 @@ int[][] boxes = {
     new int[]{3,1},
 };
 
-Console.WriteLine(new MaxUnitsOnTruck().MaximumUnits(boxes,4));
+//Console.WriteLine(new MaxUnitsOnTruck().MaximumUnits(boxes,4));
+
+TreeNode node1 = new TreeNode();
+node1.val = 1;
+
+TreeNode node2 = new TreeNode();
+node2.val = 2;
+
+TreeNode node3 = new TreeNode();
+node3.val = 3;
+
+TreeNode node4 = new TreeNode();
+node4.val = 4;
+
+TreeNode node5 = new TreeNode();
+node5.val = 5;
+
+TreeNode node6 = new TreeNode();
+node6.val = 6;
+
+TreeNode node7 = new TreeNode();
+node7.val = 7;
+
+TreeNode node8 = new TreeNode();
+node8.val = 8;
+
+TreeNode node9 = new TreeNode();
+node9.val = 9;
+
+TreeNode node10 = new TreeNode();
+node10.val = 10;
+
+
+/*node1.right = node3;
+node1.left = node2;
+
+node2.left = node4;
+node2.right = node5;
+
+node5.left = node7;
+node5.right = node8;
+
+
+node3.left = node6;
+
+node6.left = node9;
+node6.right = node10;*/
+
+node1.right = node2;
+
+node2.left = node3;
+node2.right = node4;
+
+
+Console.WriteLine(new BoundaryOfBinaryTree().BoundaryOfTree(node1));
