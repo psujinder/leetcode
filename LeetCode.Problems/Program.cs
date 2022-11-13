@@ -752,4 +752,6 @@ node0.right = node1;
 node1.left = node3;
 
 
-Console.WriteLine(new AllNodesDistanceKInBinaryTree().DistanceK(node0, node3, 3));
+//Console.WriteLine(new AllNodesDistanceKInBinaryTree().DistanceK(node0, node3, 3));
+
+Console.WriteLine(new ProductOfArrayExceptSelf().ProductExceptSelf(new int[]{-1,1,0,-3,3}));
