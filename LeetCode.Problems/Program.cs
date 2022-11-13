@@ -680,6 +680,9 @@ int[][] boxes = {
 
 //Console.WriteLine(new MaxUnitsOnTruck().MaximumUnits(boxes,4));
 
+TreeNode node0 = new TreeNode();
+node0.val = 0;
+
 TreeNode node1 = new TreeNode();
 node1.val = 1;
 
@@ -724,12 +727,29 @@ node5.right = node8;
 node3.left = node6;
 
 node6.left = node9;
-node6.right = node10;*/
+node6.right = node10;
 
 node1.right = node2;
 
 node2.left = node3;
+node2.right = node4;*/
+
+/*node3.left = node5;
+node3.right = node1;
+
+node5.left = node6;
+node5.right = node2;
+
+node2.left = node7;
 node2.right = node4;
 
+node1.left = node0;
+node1.right = node8;*/
 
-Console.WriteLine(new BoundaryOfBinaryTree().BoundaryOfTree(node1));
+
+node0.left = node2;
+node0.right = node1;
+node1.left = node3;
+
+
+Console.WriteLine(new AllNodesDistanceKInBinaryTree().DistanceK(node0, node3, 3));
