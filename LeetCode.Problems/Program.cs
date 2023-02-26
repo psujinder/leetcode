@@ -3,5 +3,5 @@ using LeetCode.Problems;
 using LeetCode.Problems.Utils;
 using System.Globalization;
 
-RomanToInteger sol = new RomanToInteger();
-Console.WriteLine(sol.RomanToInt("MCMXCIV"));
+LongestCommonPrefix_00014 sol = new LongestCommonPrefix_00014();
+Console.WriteLine(sol.LongestCommonPrefix(new string[]{"",""}));
