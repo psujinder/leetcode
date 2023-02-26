@@ -3,5 +3,12 @@ using LeetCode.Problems;
 using LeetCode.Problems.Utils;
 using System.Globalization;
 
-LongestCommonPrefix_00014 sol = new LongestCommonPrefix_00014();
-Console.WriteLine(sol.LongestCommonPrefix(new string[]{"",""}));
+
+ListNode n1 = new ListNode(1);
+/*n1.next = new ListNode(2);
+n1.next.next = new ListNode(3);
+n1.next.next.next = new ListNode(4);
+n1.next.next.next.next = new ListNode(5);*/
+
+RemoveNthNodeFromEndOfList sol = new RemoveNthNodeFromEndOfList();
+sol.RemoveNthFromEnd(n1,1);
