@@ -3,4 +3,4 @@ using LeetCode.Problems;
 using LeetCode.Problems.Utils;
 using System.Globalization;
 
-Console.WriteLine(new Pow().MyPow(34.00515,-3));
+Console.WriteLine(new Sqrt().MySqrt(8));
