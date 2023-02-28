@@ -4,4 +4,4 @@ using LeetCode.Problems.Utils;
 using System.Globalization;
 
 
-Console.WriteLine(new MissingRanges().FindMissingRanges(new int[]{-1},-2,-1));
+Console.WriteLine(new ExcelSheetColumnNumber().TitleToNumber("ZY"));
