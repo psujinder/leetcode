@@ -4,25 +4,22 @@ public class SingleNumberPR {
 
     public int SingleNumber(int[] nums) {
         
-        Dictionary<int, int> map = new Dictionary<int, int>();
-        int result;
+        HashSet<int> set = new HashSet<int>();
+
+        int sumOfSet = 0;
+        int sumOfNums = 0;
 
         foreach(int num in nums){
-            if(map.ContainsKey(num)){
-                map[num]++;
-            }else{
-                map.Add(num,1);
+            if(!set.Contains(num)){
+                set.Add(num);
+                sumOfSet += num;
             }
+
+            sumOfNums += num;
         }
 
-        foreach(int key in map.Keys){
-            if(map[key] == 1){
-                result = key;
-                break;
-            }
-        }
-    
-        return result;
+        return 2 * sumOfSet - sumOfNums;
+
     } 
 
 }
