@@ -3,4 +3,4 @@ using LeetCode.Problems;
 using LeetCode.Problems.Utils;
 using System.Globalization;
 
-Console.WriteLine(new LargestRectangle().LargestRectangleArea(new int[]{1,2,3,4,5}));
+Console.WriteLine(new LongestConsecutiveSequence().LongestConsecutive(new int[]{0,3,7,2,5,8,4,6,0,1}));
