@@ -3,4 +3,4 @@ using LeetCode.Problems;
 using LeetCode.Problems.Utils;
 using System.Globalization;
 
-Console.WriteLine(new Sqrt().MySqrt(8));
+Console.WriteLine(new LargestRectangle().LargestRectangleArea(new int[]{1,2,3,4,5}));
