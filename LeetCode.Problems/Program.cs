@@ -4,4 +4,4 @@ using LeetCode.Problems.Utils;
 using System.Globalization;
 
 
-Console.WriteLine(new ExcelSheetColumnNumber().TitleToNumber("ZY"));
+Console.WriteLine(new LongestSubstringKRepeating().LongestSubstring("ababbc",2));
