@@ -1,6 +1,6 @@
 namespace LeetCode.Problems;
 
-public class TicTacToe{
+public class TicTacToe_1275{
 
     public string TictactoeGame(int[][] moves) {
         
