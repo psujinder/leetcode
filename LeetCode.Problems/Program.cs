@@ -3,4 +3,5 @@ using LeetCode.Problems;
 using LeetCode.Problems.Utils;
 using System.Globalization;
 
-Console.WriteLine(new IncreatingTripleSequence().IncreasingTriplet(new int[]{1,2,3,4,5}));
+
+Console.WriteLine(new TopKFrequentUsed().TopKFrequent(new int[]{1,1,1,2,2,3},2));
