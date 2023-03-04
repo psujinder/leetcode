@@ -4,4 +4,4 @@ using LeetCode.Problems.Utils;
 using System.Globalization;
 
 
-Console.WriteLine(new TopKFrequentUsed().TopKFrequent(new int[]{1,1,1,2,2,3},2));
+Console.WriteLine(new LongestSubstringWithUtmostK().LengthOfLongestSubstringKDistinct("eceba",2));
