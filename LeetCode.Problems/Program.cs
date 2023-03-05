@@ -4,4 +4,4 @@ using LeetCode.Problems.Utils;
 using System.Globalization;
 
 
-Console.WriteLine(new SmallerThanSelf().CountSmaller(new int[]{5,2,6,1}));
+Console.WriteLine(new LargestNumber_PR().LargestNumber(new int[]{10,2}));
