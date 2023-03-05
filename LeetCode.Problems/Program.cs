@@ -4,4 +4,4 @@ using LeetCode.Problems.Utils;
 using System.Globalization;
 
 
-Console.WriteLine(new LargestNumber_PR().LargestNumber(new int[]{10,2}));
+new RotateArray().Rotate(new int[]{1,2,3,4,5,6,7},3);
