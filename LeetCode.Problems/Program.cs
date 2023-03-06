@@ -4,4 +4,4 @@ using LeetCode.Problems.Utils;
 using System.Globalization;
 
 
-new RotateArray().Rotate(new int[]{1,2,3,4,5,6,7},3);
+Console.WriteLine(new FractionToDecimal1().FractionToDecimal(4,333));

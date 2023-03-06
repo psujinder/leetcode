@@ -1,6 +1,5 @@
 namespace LeetCode.Problems;
 
-
 public class CopyListWithRandomPointer{
 
     public Node CopyRandomList(Node head) {
@@ -40,6 +39,7 @@ public class Node {
     public int val;
     public Node next;
     public Node random;
+    public List<Node> children;
     
     public Node(int _val) {
         val = _val;
