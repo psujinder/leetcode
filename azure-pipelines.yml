@@ -29,7 +29,7 @@ steps:
 - task: CopyFilesOverSSH@0
   inputs:
     sshEndpoint: SSHFileCopyTargetMachine1
-    sourceFolder: '$(System.DefaultWorkingDirectory)/_psujinder.leetcode/drop'
+    sourceFolder: $(Build.ArtifactStagingDirectory)
     targetFolder: 'c:/repo'
     isWindowsOnTarget: true
     cleanTargetFolder: true
