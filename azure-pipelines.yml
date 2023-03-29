@@ -13,24 +13,19 @@ steps:
 #checkout code
 - checkout: self
 
-#login to the remote server
-- task: AzureFileCopy@5
+#copy files to the build staging directory
+- task: CopyFiles@2
   inputs:
-    SourcePath: Build.Repository.LocalPath
-    Destination: AzureVMs
-    resourceGroup: "comcast-sqldse-rg"
-    azureSubscription: ""
-    storage: ""
-    MachineNames: "targetmachine1,targetmachine2"
+    Contents: '**'
+    TargetFolder: $(Build.ArtifactStagingDirectory)
 
-
+#publish build artifact
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: $(Build.ArtifactStagingDirectory)
+    ArtifactName: 'drop'
+    publishLocation: Container
 
 #copy code to remote server
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
-
-
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
