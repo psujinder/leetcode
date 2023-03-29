@@ -19,12 +19,22 @@ steps:
     Contents: '**'
     TargetFolder: $(Build.ArtifactStagingDirectory)
 
-#publish build artifact
-- task: PublishBuildArtifacts@1
+- task: CopyFilesOverSSH@0
   inputs:
-    PathtoPublish: $(Build.ArtifactStagingDirectory)
-    ArtifactName: 'drop'
-    publishLocation: Container
+    sshEndpoint: 'SSHFileCopyTargetMachine1'
+    sourceFolder: '$(Build.ArtifactStagingDirectory)'
+    contents: '**'
+    targetFolder: 'c:\repo'
+    isWindowsOnTarget: true
+    cleanTargetFolder: true
+    readyTimeout: '20000'
+
+#publish build artifact
+#- task: PublishBuildArtifacts@1
+#  inputs:
+#    PathtoPublish: $(Build.ArtifactStagingDirectory)
+#    ArtifactName: 'drop'
+#    publishLocation: Container
 
 #copy code to remote server
 - script: echo Hello, world!
